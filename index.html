@@ -4,6 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Textarea project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 class="text-5xl text-center p-10 font-bold uppercase">
+        this is textArea project
+      </h1>
+    </header>
+
+    <main class="text-center border-lime-100">
+      <div class="flex justify-center gap-4">
+        <button
+          id="bold"
+          class="bg-slate-500 p-4 rounded-lg text-white font-extrabold"
+        >
+          B
+        </button>
+        <button
+          id="italic"
+          class="bg-slate-500 p-4 rounded-lg text-white font-extrabold italic"
+        >
+          I
+        </button>
+        <button
+          id="underline"
+          class="bg-slate-500 p-4 rounded-lg text-white font-extrabold underline"
+        >
+          U
+        </button>
+
+        <!-- ========================= -->
+        <button id="center" class="bg-slate-500 p-4 rounded-lg text-white">
+          Center
+        </button>
+        <button id="left" class="bg-slate-500 p-4 rounded-lg text-white">
+          left
+        </button>
+        <button id="right" class="bg-slate-500 p-4 rounded-lg text-white">
+          right
+        </button>
+        <button id="justify" class="bg-slate-500 p-4 rounded-lg text-white">
+          justify
+        </button>
+        <button id="upper-lower" class="bg-slate-500 p-4 rounded-lg text-white">
+          upper-lower
+        </button>
+
+        <input
+          type="number"
+          id="font-size"
+          class="border-4"
+          onclick="changeFont()"
+        />
+        <input
+          type="color"
+          id="color"
+          class="border-4"
+          onchange="changeColor()"
+        />
+      </div>
+
+      <textarea
+        class="border-8 p-3 w-9/12 h-[20rem]"
+        name=""
+        id="textarea"
+        cols="70"
+        rows="10"
+      ></textarea>
+    </main>
+
+    <footer>
+      <p class="text-2xl text-center">this project made by shiham</p>
+    </footer>
+  </body>
 </html>
